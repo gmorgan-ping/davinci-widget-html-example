@@ -3,11 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>Hello World - HTML Orchestrate Example</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://cdn.glitch.global/86f49d12-9b08-4e93-a692-e8f792336445/template.png?v=1641486726470"
-    />
   </head>
   <script
     type="text/javascript"
@@ -15,18 +10,16 @@
   ></script>
   <script>
     function loadwidget() {
-      const skApiBaseUrl =
-        "https://orch-training-examples-api.pingidentity-sk.com/v1";
+      const skApiBaseUrl = "https://orch-training-examples-api.pingidentity-sk.com/v1";
       const companyId = "6YWgejhFHGFyhZM57KfdhnYf7fmeMZKM";
-      const skApiKey =
-        "JKfTaDAGtuSPlrZpoTPOxXf2mymToY53N0iJqnEk3ljwvziVgtunEKJCteBy79kpxxIuMSwcqsu2kc7UnFFlnZriYLauhyHvdTiB9eSPp32nM8dula77EvWr3xuAoXu3QkjYQYKDFJ9qeouNAvGVH9EoQvmJQPxUQeD9Pb9ho0vFZ3rNc6Dh9abABVznGRZ8jKJtHMlih3qzBFQxAoWoDUrrxepKonHk80hmJw6yS54End5CjXmSg8ad01vqXp1O";
+      const skApiKey = "JKfTaDAGtuSPlrZpoTPOxXf2mymToY53N0iJqnEk3ljwvziVgtunEKJCteBy79kpxxIuMSwcqsu2kc7UnFFlnZriYLauhyHvdTiB9eSPp32nM8dula77EvWr3xuAoXu3QkjYQYKDFJ9qeouNAvGVH9EoQvmJQPxUQeD9Pb9ho0vFZ3rNc6Dh9abABVznGRZ8jKJtHMlih3qzBFQxAoWoDUrrxepKonHk80hmJw6yS54End5CjXmSg8ad01vqXp1O";
       const policyId = "ZNhdKz6Nm0o6OrFR6cS3Vhw9VasWNc21";
 
-      /*** Build the get SK Token URL. ***/
+      /*** Build the get PingOrchesetrate Token URL. ***/
       const skGetTokenUrl =
         skApiBaseUrl + "/company/" + companyId + "/sdkToken";
 
-      //*** Add the API Key from your SK Application. ***/
+      //*** Add the API Key from your PingOrchesetrate Application. ***/
       var headers = new Headers();
       headers.append("X-SK-API-KEY", skApiKey);
 
@@ -36,7 +29,7 @@
         redirect: "follow",
       };
 
-      /*** Retrieve SK Token ***/
+      /*** Retrieve PingOrchestrate Token ***/
       fetch(skGetTokenUrl, requestOptions)
         .then((response) => response.json())
         .then((responseData) => {
@@ -53,10 +46,10 @@
             errorCallback,
             onCloseModal,
           };
-          /*** Invoke Singular Key Widget ****/
+          /*** Invoke PingOrchestrate Widget ****/
           console.log(props);
           singularkey.skRenderScreen(
-            document.getElementsByClassName("skWidget")[0],
+            document.getElementById("widget"),
             props
           );
         })
