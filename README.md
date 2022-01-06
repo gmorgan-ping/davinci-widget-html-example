@@ -10,3 +10,10 @@ Set the following variables within the index.html page (lines 18-21)
 - companyId
 - skApiKey
 - policyId
+
+
+## Glitch Project
+https://glitch.com/~orchestrate-widget-html-example
+
+## GitHub Repo
+https://github.com/gmorgan-ping/orchestrate-widget-html-example
