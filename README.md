@@ -1,6 +1,6 @@
-# PingOrchestrate Sample Flow Embed
+# PingOne DaVinci Sample Flow Embed
 
-This glitch application allows you to embed your PingOrchestrate widget within an HTML page.
+This glitch application allows you to embed your PingOne DaVinci widget within an HTML page.
 
 ## Usage
 
@@ -13,7 +13,7 @@ Set the following variables within the index.html page (lines 18-21)
 
 
 ## Glitch Project
-https://glitch.com/~orchestrate-widget-html-example
+https://glitch.com/~davinci-widget-html-example
 
 ## GitHub Repo
-https://github.com/gmorgan-ping/orchestrate-widget-html-example
+https://github.com/gmorgan-ping/davinci-widget-html-example
